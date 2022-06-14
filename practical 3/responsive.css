@@ -1,0 +1,46 @@
+
+.homer{
+    width: 312.5px; height: 312.5px;
+    background: url("homer.jpg");
+}
+
+@media only screen and (min-width: 1600px) {
+    .homer{  
+            background-position : 0px 0px; /*display the top-left image of homer.jpg*/
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .homer{
+            background-position : -312.5px 0px; /* top-right image of homer.jpg*/
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .homer{
+            background-position : 0px -312.5px; /*  the bottom-left image of homer.jpg*/
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .homer{
+            background-position : -312.5px -312.5px; /*  bottom-right of homer.jpg*/
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .homer{
+            background-position : 0px -312.5px; /* display the bottom-left image of homer.jpg*/
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .homer{
+            background-position : -312.5px 0px; /*display the top-right image of homer.jpg*/
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homer{
+            background-position : 0px 0px; /*display the top-left image of homer.jpg*/
+    }
+}
