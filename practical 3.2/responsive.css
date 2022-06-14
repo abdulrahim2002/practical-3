@@ -1,0 +1,82 @@
+/* /* kriti, co199335*/
+/* here media query is used to amek image responsive,
+The entire image software.png is 640px x 480px. 
+there are 5 columns and 2 rows so the width: 640/5 : 128px height is 480/ 2 : 240px;
+the div tag : 128px x 240px is then shited between qudrants 
+quadrant line for width : 0 px, -128px, -254px, -384px, -640px;
+*/
+.software{
+    width: 128px; height: 240px;
+    background: url("software.png");
+}
+
+@media only screen and (min-width : 1200px) {
+    .software {
+            background-position: 0px 0px ; 
+            /* display the top-left image of software.png : How the customer explained it  */
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px){
+    .software {
+            background-position: -128px 0px ; 
+            /* 2nd image on the top row : "How the Project Leader understood it" */
+    }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+    .software {
+            background-position: -256px 0px;
+            /*display the 3rd image on the top row : "How the Analyst designed it").*/
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+    .software {
+        background-position: -384px 0px; /*display the fourth image on the top row.*/
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+    .software {
+        background-position: -512px 0px; /*display the last on the top row.*/
+    }
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    .software {
+        background-position: 0px -240px;
+            /*display the first image on the second row ("How the project was documented").*/
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+    .software {
+        background-position: -128px -240px;
+            /*2nd image on the 2nd row */
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+    .software {
+        background-position: -256px -240px;
+            /* third image 2nd row */
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+    .software {
+        background-position: -384px -240px;
+            /*4th image, 2nd row*/
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .software {
+        background-position: -512px -240px;
+            /*last image, bottom-right ("What the customer really needed"). */
+    }
+}
+ 
